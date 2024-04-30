@@ -1,10 +1,10 @@
 import random
 
 def hangman():
-    words = ["hello", "world", "apple","beautiful"]
+    words = ["hello", "world", "apple", "beautiful"]
     word = random.choice(words)
     guessed_letters = set()
-    attempts_left = 3
+    attempts_left = 6
 
     print("Welcome to Hangman!")
     print("_ " * len(word))
@@ -39,6 +39,3 @@ def hangman():
 
 if __name__ == "__main__":
     hangman()
-
-
-
